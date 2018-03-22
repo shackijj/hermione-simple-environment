@@ -1,5 +1,5 @@
 module.exports = (hermione, opts) => {
-    hermione.on(hermione.events.INIT, () => {
+    hermione.on(hermione.events.BEGIN, () => {
       return opts.loadFixtures()
         .then(() => opts.startServer())
     });
